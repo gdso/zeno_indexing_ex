@@ -1,7 +1,8 @@
 # zeno_indexing_ex
 
-An elixir implementation of [zenos_indexing_*](https://github.com/gdso/zeno_indexing/), 
-a cross-language effort to implement compatible fractional indexing libraries.
+An Elixir implementation of David Greenspan's approach to [fractional indexing implementation](https://observablehq.com/@dgreensp/implementing-fractional-indexing@547),
+enabling your Elixir backend to generate ordered keys compatible with keys 
+generated on the client-side (using TODO `zeno-indexing-js`). 
 
 ## Installation
 
@@ -18,5 +19,5 @@ end
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/zenos_indexing>.
+be found at <https://hexdocs.pm/zeno_indexing_ex>.
 
