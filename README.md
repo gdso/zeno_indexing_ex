@@ -1,7 +1,7 @@
 # zeno_indexing_ex
 
-An Elixir implementation of David Greenspan's approach to [fractional indexing implementation](https://observablehq.com/@dgreensp/implementing-fractional-indexing@547),
-enabling your Elixir backend to generate ordered keys compatible with keys 
+An Elixir implementation of David Greenspan's approach to [fractional indexing](https://observablehq.com/@dgreensp/implementing-fractional-indexing@547);
+this library enables your Elixir backend to generate ordered keys compatible with keys 
 generated on the client-side (using TODO `zeno-indexing-js`). 
 
 ## Installation
