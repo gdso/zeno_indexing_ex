@@ -1,14 +1,7 @@
 # zeno_indexing_ex
 
-Yet another fractional indexing library: 
-
- * based on (but not necessarily compatible) with the 
-algorithm introduced by David Greenspan.
-
- * with a unique (and ironic) name (see Zeno's [dichotomy paradox](https://en.wikipedia.org/wiki/Zeno%27s_paradoxes#Dichotomy_paradox)),
- meant to dispel the idea that it's byte-for-byte compatible with other implementations of Greenspan's algorithm
-
- * is published alongside a compatible Javascript library (TODO)
+An elixir implementation of [zenos_indexing_*](https://github.com/gdso/zeno_indexing/), 
+a cross-language effort to implement compatible fractional indexing libraries.
 
 ## Installation
 
