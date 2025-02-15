@@ -6,8 +6,10 @@ defmodule ZenoIndexingEx.MixProject do
       app: :zenos_indexing_ex,
       version: "0.1.0",
       elixir: "~> 1.14",
-      licenses: "MIT", 
+      licenses: ["MIT"],
+      description: "A fractional indexing library",
       source_url: "https://github.com/gdso/zeno_indexing_ex",
+      links: %{"Github" => "https://github.com/gdso/zeno_indexing_ex"},
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
