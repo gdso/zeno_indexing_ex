@@ -3,7 +3,7 @@ defmodule ZenoIndexingEx.MixProject do
 
   def project do
     [
-      app: :zenos_indexing_ex,
+      app: :zeno_indexing_ex,
       version: "0.1.0",
       elixir: "~> 1.14",
       source_url: "https://github.com/gdso/zeno_indexing_ex",
