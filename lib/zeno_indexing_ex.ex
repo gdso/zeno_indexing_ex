@@ -3,9 +3,9 @@ defmodule ZenoIndexingEx do
 
   @moduledoc """
 
-  In a nutshell, `ZenoIndexingEx`'s primary function (see `generate_key/2`) is 
-  to generate a string-based (order) key that sorts (lexicographically) in between two 
-  two other keys `a` and `b`.
+  `ZenoIndexingEx`'s provides the `generate_key/2` function to help you
+  generate a fractional index (a string-based key), that sorts 
+  lexicographically in between two existing keys `a` and `b`.
 
   # Fractional indexes with logarithmic key growth
 
@@ -13,7 +13,7 @@ defmodule ZenoIndexingEx do
   in between keys `a` and `b`, this particular module is an 
   implementation of Greenspan's _fractional indexing algorithm with logarithmic key growth_, 
   which itself an improvement on 
-  Evan Wallace's _fractional indexing_ approach
+  Evan Wallace's _fractional indexing_ approach.
 
   ## Examples
 
