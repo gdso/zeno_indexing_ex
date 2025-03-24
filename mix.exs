@@ -21,10 +21,13 @@ defmodule ZenoIndexingEx.MixProject do
     ]
   end
 
-  def package do 
+  def package do
     [
       licenses: ["MIT"],
-      links: %{"Github" => "https://github.com/gdso/zeno_indexing_ex"},
+      links: %{
+        "Github" => "https://github.com/gdso/zeno_indexing_ex",
+        "Docs" => "https://hexdocs.pm/zeno_indexing_ex"
+      }
     ]
   end
 
