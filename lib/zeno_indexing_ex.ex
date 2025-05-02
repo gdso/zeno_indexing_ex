@@ -18,8 +18,12 @@ defmodule ZenoIndexingEx do
       # {:ok, "a1"}
   
   And if you'd like to use it without having to pattern match the result
-
       
+      # iex> ZenoIndexingEx.generate_key!(nil, nil)
+      # "a0"
+      #
+      # iex> ZenoIndexingEx.generate_key!("a0", nil)
+      # "a1"
 
   ## Order key format
 
