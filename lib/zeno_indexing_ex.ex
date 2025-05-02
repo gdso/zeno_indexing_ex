@@ -16,6 +16,10 @@ defmodule ZenoIndexingEx do
       #
       # iex> ZenoIndexingEx.generate_key("a0", nil)
       # {:ok, "a1"}
+  
+  And if you'd like to use it without having to pattern match the result
+
+      
 
   ## Order key format
 
@@ -132,6 +136,19 @@ defmodule ZenoIndexingEx do
       end
     else
       error -> error
+    end
+  end
+
+  @doc """
+  Generates an order key just like `generate_key/2`, but raises an error if the key generation fails.
+  """
+  def generate_key!(a, b) do
+    case generate_key(a, b) do
+      {:ok, key} ->
+        key
+
+      {:error, error} ->
+        raise "Failed to generate key: #{inspect(error)}"
     end
   end
 
