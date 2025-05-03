@@ -66,6 +66,8 @@ defmodule ZenoIndexingEx do
 
   """
   @spec generate_key(order_key(), order_key()) :: {:ok, order_key()} | {:error, order_key()}
+  @spec generate_key(order_key(), order_key()) ::
+          {:ok, order_key()} | {:error, error_code :: atom(), reason :: String.t()}
   def generate_key(a, b) do
     with true <- validate_key(a),
          true <- validate_key(b),
