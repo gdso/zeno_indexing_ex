@@ -16,7 +16,7 @@ defmodule ZenoIndexingEx do
       #
       # iex> ZenoIndexingEx.generate_key("a0", nil)
       # {:ok, "a1"}
-  
+
   And if you'd like to use it without having to pattern match the result
       
       # iex> ZenoIndexingEx.generate_key!(nil, nil)
@@ -65,7 +65,6 @@ defmodule ZenoIndexingEx do
   between the keys `a` and `b`.
 
   """
-  @spec generate_key(order_key(), order_key()) :: {:ok, order_key()} | {:error, order_key()}
   @spec generate_key(order_key(), order_key()) ::
           {:ok, order_key()} | {:error, error_code :: atom(), reason :: String.t()}
   def generate_key(a, b) do
@@ -153,8 +152,8 @@ defmodule ZenoIndexingEx do
       {:ok, key} ->
         key
 
-      {:error, error} ->
-        raise "Failed to generate key: #{inspect(error)}"
+      {:error, error_code, reason } ->
+        raise "#{inspect(error_code)} - #{reason}"
     end
   end
 
