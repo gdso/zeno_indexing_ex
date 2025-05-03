@@ -80,8 +80,8 @@ a1 a0 !error
 end)
 |> Jason.encode(pretty: true)
 
-IO.inspect(~s(__DIR__))
-test_case_json_path = Path.join(__DIR__, "/../../test_cases.json")
+IO.inspect(__DIR__)
+test_case_json_path = Path.join(__DIR__, "/../test/test_cases.json")
 IO.inspect(test_case_json_path)
 IO.inspect(~s(File.exists?\(test_case_json_path\) = #{File.exists?(test_case_json_path)}))
 
