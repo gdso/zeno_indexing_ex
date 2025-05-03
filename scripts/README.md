@@ -5,7 +5,7 @@
 The `reformat_test_cases.exs`  is a script that converts test cases
 Greenspan wrote in his original code samples and reformats them into a 
 JSON file (yes, I too am not a fan of JSON, but this is the world we live in)
-that multiple languages can load and test against. 
+that multiple languages can load and test against.
 
 ### Running the script
 
@@ -17,6 +17,9 @@ it must run in the `test` environment of the `./../mix.exs` project.
 NOTE `mix` calls must be made whilst in the directory where the `mix.exs` 
 is present (which defines a `Mix.Project` -- i.e. go up a directory to use 
 the `mix run` command above.
+
+The `reformat_test_cases.exs` script will write the JSON file `test_cases.json` 
+to the parent directory's (jump to "./../test/test_cases.json") folder.
 
 
 
