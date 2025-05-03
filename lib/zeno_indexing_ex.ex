@@ -17,6 +17,14 @@ defmodule ZenoIndexingEx do
       # iex> ZenoIndexingEx.generate_key("a0", nil)
       # {:ok, "a1"}
 
+  And if you'd like to use it without having to pattern match the result
+      
+      # iex> ZenoIndexingEx.generate_key!(nil, nil)
+      # "a0"
+      #
+      # iex> ZenoIndexingEx.generate_key!("a0", nil)
+      # "a1"
+
   ## Order key format
 
   Ordered keys (or *order keys* for short) are not just any strings (see `t:order_key()`), 
@@ -57,7 +65,8 @@ defmodule ZenoIndexingEx do
   between the keys `a` and `b`.
 
   """
-  @spec generate_key(order_key(), order_key()) :: {:ok, order_key()} | {:error, order_key()}
+  @spec generate_key(order_key(), order_key()) ::
+          {:ok, order_key()} | {:error, error_code :: atom(), reason :: String.t()}
   def generate_key(a, b) do
     with true <- validate_key(a),
          true <- validate_key(b),
@@ -132,6 +141,19 @@ defmodule ZenoIndexingEx do
       end
     else
       error -> error
+    end
+  end
+
+  @doc """
+  Generates an order key just like `generate_key/2`, but raises an error if the key generation fails.
+  """
+  def generate_key!(a, b) do
+    case generate_key(a, b) do
+      {:ok, key} ->
+        key
+
+      {:error, error_code, reason } ->
+        raise "#{inspect(error_code)} - #{reason}"
     end
   end
 

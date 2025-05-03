@@ -1,0 +1,152 @@
+[
+  {
+    "a": null,
+    "b": null,
+    "result": "a0",
+    "should_error": false
+  },
+  {
+    "a": null,
+    "b": "a0",
+    "result": "Zz",
+    "should_error": false
+  },
+  {
+    "a": "a0",
+    "b": null,
+    "result": "a1",
+    "should_error": false
+  },
+  {
+    "a": "a0",
+    "b": "a1",
+    "result": "a0V",
+    "should_error": false
+  },
+  {
+    "a": "a0V",
+    "b": "a1",
+    "result": "a0l",
+    "should_error": false
+  },
+  {
+    "a": "Zz",
+    "b": "a0",
+    "result": "ZzV",
+    "should_error": false
+  },
+  {
+    "a": "Zz",
+    "b": "a1",
+    "result": "a0",
+    "should_error": false
+  },
+  {
+    "a": null,
+    "b": "Y00",
+    "result": "Xzzz",
+    "should_error": false
+  },
+  {
+    "a": "bzz",
+    "b": null,
+    "result": "c000",
+    "should_error": false
+  },
+  {
+    "a": "a0",
+    "b": "a0V",
+    "result": "a0G",
+    "should_error": false
+  },
+  {
+    "a": "a0",
+    "b": "a0G",
+    "result": "a08",
+    "should_error": false
+  },
+  {
+    "a": "b125",
+    "b": "b129",
+    "result": "b127",
+    "should_error": false
+  },
+  {
+    "a": "a0",
+    "b": "a1V",
+    "result": "a1",
+    "should_error": false
+  },
+  {
+    "a": "Zz",
+    "b": "a01",
+    "result": "a0",
+    "should_error": false
+  },
+  {
+    "a": null,
+    "b": "a0V",
+    "result": "a0",
+    "should_error": false
+  },
+  {
+    "a": null,
+    "b": "b999",
+    "result": "b99",
+    "should_error": false
+  },
+  {
+    "a": "A00000000000000000000000000",
+    "b": null,
+    "result": null,
+    "should_error": true
+  },
+  {
+    "a": null,
+    "b": "A00000000000000000000000000",
+    "result": null,
+    "should_error": true
+  },
+  {
+    "a": null,
+    "b": "A000000000000000000000000001",
+    "result": "A000000000000000000000000000V",
+    "should_error": false
+  },
+  {
+    "a": "zzzzzzzzzzzzzzzzzzzzzzzzzzy",
+    "b": null,
+    "result": "zzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "should_error": false
+  },
+  {
+    "a": "zzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "b": null,
+    "result": "zzzzzzzzzzzzzzzzzzzzzzzzzzzV",
+    "should_error": false
+  },
+  {
+    "a": "a00",
+    "b": null,
+    "result": null,
+    "should_error": true
+  },
+  {
+    "a": "a00",
+    "b": "a1",
+    "result": null,
+    "should_error": true
+  },
+  {
+    "a": "0",
+    "b": "1",
+    "result": null,
+    "should_error": true
+  },
+  {
+    "a": "a1",
+    "b": "a0",
+    "result": null,
+    "should_error": true
+  }
+]
